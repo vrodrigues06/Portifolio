@@ -1,8 +1,8 @@
 /* Utilitários */
-@import url(./global.css);
+@import "./global.css";
 
 
 
 /* Estrutura do Site */
 
-@import url(./header.css);
+@import "./header.css";
