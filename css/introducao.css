@@ -325,7 +325,7 @@
   }
 
   .introducao-info h1 {
-    font-size: 24px;
+    font-size: 30px;
 
   }
 
@@ -334,7 +334,7 @@
   }
 
   .introducao-info p {
-    font-size: 14px
+    font-size: 16px;
   }
 
   .curriculo {
@@ -344,6 +344,17 @@
 
   .contate {
     padding: 10px 10px;
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .introducao-info h1 {
+    font-size: 28px;
+  }
+
+  .introducao-info p {
     font-size: 14px;
   }
 }
