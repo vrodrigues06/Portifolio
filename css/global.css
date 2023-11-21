@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  height: 4000px;
+  background-color: #FAF6F0;
 }
 
 h1,
@@ -33,4 +35,5 @@ img[src$=".jpg"] {
 
 button {
   border: none;
+  text-transform: uppercase;
 }
