@@ -260,7 +260,7 @@
 }
 
 
-@media (min-width: 751px) {
+@media (min-width: 750px) {
   #imagem-perfil {
     content: url(../img/fotos/perfil.png)
   }
@@ -279,6 +279,7 @@
 
   .introducao-img {
     order: -1;
+    position: relative;
   }
 
 
@@ -322,18 +323,11 @@
   .introducao-redes {
     gap: 12px;
     position: absolute;
-    bottom: -40px;
+    bottom: -350px
   }
 
   .rede-icon {
     width: 30px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .introducao-redes {
-    bottom: 40px;
   }
 }
 
@@ -370,19 +364,13 @@
   }
 }
 
-@media (max-width: 460px) {
+/* @media (max-width: 450px) {
   .introducao-redes {
-    bottom: 20px;
+    bottom: -380px;
   }
-}
+} */
 
-@media (max-width: 420px) {
-  .introducao-redes {
-    bottom: -10px;
-  }
-}
-
-@media(max-width: 400px) {
+@media(max-width: 410px) {
   .introducao-bg {
     height: 720px;
   }
@@ -395,22 +383,12 @@
     font-size: 14px;
   }
 
-  .introducao-redes {
-    bottom: 50px;
-  }
-
   .perfil {
     width: 200px;
   }
 }
 
-@media (max-width: 394px) {
-  .introducao-redes {
-    bottom: 0px;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .introducao-redes {
     display: none;
   }
