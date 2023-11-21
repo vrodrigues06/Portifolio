@@ -339,7 +339,7 @@
 
 @media (max-width: 500px) {
   .introducao-bg {
-    height: 550px;
+    height: 760px;
   }
 
   .introducao {
@@ -383,6 +383,10 @@
 }
 
 @media(max-width: 400px) {
+  .introducao-bg {
+    height: 720px;
+  }
+
   .introducao-info h1 {
     font-size: 26px;
   }
@@ -400,8 +404,14 @@
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 394px) {
   .introducao-redes {
-    bottom: -20px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .introducao-redes {
+    display: none;
   }
 }
