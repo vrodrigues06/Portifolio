@@ -260,22 +260,31 @@
 }
 
 
+@media (min-width: 751px) {
+  #imagem-perfil {
+    content: url(../img/fotos/perfil.png)
+  }
+}
+
 @media (max-width: 750px) {
   .introducao-bg {
-    height: 640px;
+    height: 820px;
   }
 
   .introducao {
     grid-template-columns: 1fr;
     padding: 20px 15px;
-    gap: 40px;
+    gap: 10px;
   }
 
+  .introducao-img {
+    order: -1;
+  }
 
 
   .introducao-info h1 {
     max-width: 100%;
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
     text-align: center;
     letter-spacing: 0;
     display: flex;
@@ -296,17 +305,24 @@
 
   }
 
-  .perfil {
-    display: none;
-  }
-
   .info-button {
     justify-content: center;
 
   }
 
+  .perfil {
+    width: 220px;
+    margin-bottom: 8px;
+  }
+
+  #imagem-perfil {
+    content: url(../img/fotos/perfil-pequena.png)
+  }
+
   .introducao-redes {
-    gap: 12px
+    gap: 12px;
+    position: absolute;
+    bottom: -40px;
   }
 
   .rede-icon {
@@ -314,6 +330,12 @@
   }
 }
 
+
+@media (max-width: 600px) {
+  .introducao-redes {
+    bottom: 40px;
+  }
+}
 
 @media (max-width: 500px) {
   .introducao-bg {
@@ -348,13 +370,38 @@
   }
 }
 
+@media (max-width: 460px) {
+  .introducao-redes {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .introducao-redes {
+    bottom: -10px;
+  }
+}
 
 @media(max-width: 400px) {
   .introducao-info h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .introducao-info p {
     font-size: 14px;
+  }
+
+  .introducao-redes {
+    bottom: 50px;
+  }
+
+  .perfil {
+    width: 200px;
+  }
+}
+
+@media (max-width: 395px) {
+  .introducao-redes {
+    bottom: -20px;
   }
 }
