@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  height: 4000px;
   background-color: #FAF6F0;
 }
 
@@ -58,4 +61,13 @@ button {
 
 .texto strong {
   font-weight: 700;
+}
+
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.6px;
+  position: relative;
+  border-radius: 5px;
 }

@@ -1,0 +1,107 @@
+.projeto {
+  grid-template-columns: 1fr;
+}
+
+.projeto-box {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  position: relative;
+}
+
+.projeto-info h2 {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 32px;
+  color: #160321;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.projeto-info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #5b5061;
+  line-height: 1.6;
+  max-width: 50ch;
+  margin-bottom: 20px;
+}
+
+.projeto-info h3 {
+  font-weight: 700;
+  color: #220534;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.projeto-buttons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projeto-button {
+  font-size: 16px;
+  color: #faf6f0;
+  background: linear-gradient(#A575BD, #3D1357);
+  padding: 16px 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.projeto-button::after {
+  display: inline-block;
+  content: "➜";
+  margin-left: 4px;
+  font-size: 18px;
+  position: relative;
+}
+
+.projeto-button:hover {
+  background: linear-gradient(#b27fca, #5c237f);
+}
+
+.projeto-button:hover::after {
+  animation: moveright .5s forwards;
+}
+
+.projeto-git:hover {
+  transform: scale(1.1);
+  transition: transform .2s ease-in-out;
+}
+
+
+.bg {
+  grid-template-columns: 1fr 1.2fr;
+  padding: 40px 0;
+  background: linear-gradient(to right, #EBD7BE 80%, #faf6f0 20%);
+  box-shadow: -180px 0 0 0 #EBD7BE;
+}
+
+
+.bg .projeto-info {
+  text-align: end;
+}
+
+.bg .projeto-info p {
+  max-width: 60ch;
+}
+
+.bg .projeto-buttons {
+  justify-content: end;
+}
+
+@keyframes moveright {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 8px
+  }
+
+  100% {
+    left: 0px;
+  }
+}

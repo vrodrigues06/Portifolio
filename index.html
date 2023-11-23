@@ -26,9 +26,9 @@
           <span id="hamburguer"></span>
         </button>
         <ul class="header-menu">
-          <li><a href="#Sobre">Sobre</a></li>
-          <li><a href="#Projetos">Projetos</a></li>
-          <li><a href="#Contatos">Contatos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
           <li><a href="">Envie um E-mail</a></li>
         </ul>
       </nav>
@@ -40,7 +40,7 @@
         <h1 class="titulo">Desenvolvedor Front-End</h1>
         <p class="texto">Olá! Sou <strong>Vitor</strong>, Desenvolvedor apaixonado pela construção de interfaces Web funcionais. Navegue pelo meu portfólio e explore minha capacidade de criar sites <strong> responsivos </strong> e atraentes, não deixando de lado a <strong> acessibilidade </strong> e <strong> SEO</strong>. </p>
         <div class="info-button">
-          <a class="curriculo" href="curriculo.txt" download>Baixar CV</a>
+          <a class="curriculo button" href="curriculo.txt" download>Baixar CV</a>
           <a class="contate" href="">Contate-me</a>
         </div>
       </div>
@@ -56,11 +56,13 @@
     </div>
   </section>
 
-  <section class="sobre-bg">
+  <section id="sobre" class="sobre-bg">
     <div class="sobre container">
+
       <div class="sobre-img">
         <img src="./img/fotos/teste.jpg" alt="">
       </div>
+
       <div class="sobre-info">
         <h1 class="titulo roxo">Sobre Mim</h1>
         <p class="texto">Olá! Meu nome é <strong> Vitor </strong>, tenho 26 anos e estou atualmente cursando <strong> Análise e Desenvolvimento de Sistemas (ADS) </strong>, alimentando minha paixão por tecnologia e programação. Meu objetivo é evoluir na carreira de desenvolvimento, vislumbrando tornar-me um especialista Full Stack.<strong> Atualmente, meu foco está no desenvolvimento Front-end </strong>, onde busco aprimorar minhas habilidades e explorar novas possibilidades criativas. Ansioso para podermos construir algo incrível juntos!</p>
@@ -117,11 +119,49 @@
     </ul>
   </section>
 
-  <section class="projeto-bg">
+  <section id="projetos" class="projeto-bg">
     <div class="projeto container">
       <h1 class="titulo roxo">Projetos</h1>
+      <div class="projeto-box">
+        <div class="projeto-img">
+          <img src="./img/fotos/bikcraft-teste.png" alt="Bikcraft Projeto">
+        </div>
+        <div class="projeto-info">
+          <h2>Bikcraft</h2>
+          <p>Projeto de um site de bicicletas motorizadas, nele foi criado toda a parte de design e aplicação do código, com foco em partes importantes como: acessibilidade, responsivo, SEO e é usado CSS puro de maneira avançada, criando componentes e classes utilitárias usada em todo o site. </p>
+          <h3>HTML, CSS e JavaScript.</h3>
+          <div class="projeto-buttons">
+            <a class="projeto-button button" href="https://vrodrigues06.github.io/bikecraft/" target="_blank">Explore Mais</a>
+            <a class="projeto-git" href="https://github.com/vrodrigues06/bikecraft" target="_blank">
+              <img src="./img/redes/project-git.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-box bg">
+        <div class="projeto-info">
+          <h2>Smart Gym</h2>
+          <p>Projeto de um site de bicicletas motorizadas, nele foi criado toda a parte de design e aplicação do código, com foco em partes importantes como: acessibilidade, responsivo, SEO e é usado CSS puro de maneira avançada, criando componentes e classes utilitárias usada em todo o site. </p>
+          <h3>HTML, CSS e JavaScript.</h3>
+          <div class="projeto-buttons">
+            <a class="projeto-button button" href="https://vrodrigues06.github.io/bikecraft/" target="_blank">Explore Mais</a>
+            <a class="projeto-git" href="https://github.com/vrodrigues06/bikecraft" target="_blank">
+              <img src="./img/redes/project-git.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="projeto-img">
+          <img src="./img/fotos/gym-project.png" alt="Bikcraft Projeto">
+        </div>
+      </div>
     </div>
   </section>
+
+  <footer>
+    <div class="footer container">
+      <p>Made by @Vitor, alguns direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="./js/script.js"></script>
 </body>
