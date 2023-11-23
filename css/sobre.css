@@ -145,8 +145,8 @@ h4 {
 
 @media (max-width: 750px) {
   .roxo {
-    display: block;
-    text-align: start;
+    display: flex;
+    justify-content: start;
   }
 
   .roxo::before {
