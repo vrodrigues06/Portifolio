@@ -9,6 +9,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 ul,
 p {
   margin: 0;
@@ -36,4 +37,25 @@ img[src$=".jpg"] {
 button {
   border: none;
   text-transform: uppercase;
+}
+
+
+.container {
+  max-width: 1200px;
+  padding: 70px 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.texto {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.58;
+  max-width: 40ch;
+}
+
+.texto strong {
+  font-weight: 700;
 }

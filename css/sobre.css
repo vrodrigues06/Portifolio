@@ -1,0 +1,65 @@
+.roxo {
+  color: #160321;
+  letter-spacing: 0;
+}
+
+.roxo::before {
+  background-color: #5F2C7A;
+}
+
+p strong {
+  color: #372840;
+}
+
+.sobre-info .texto {
+  color: #372840;
+  margin-bottom: 40px;
+}
+
+
+h4 {
+  font-size: 26px;
+  color: #160321;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  max-width: 500px;
+  margin-bottom: 80px;
+}
+
+.contato li {
+  font-size: 20px;
+  color: #372840;
+  position: relative;
+}
+
+.contato-email {
+  text-decoration: underline;
+}
+
+.contato-email:hover {
+  color: rgb(60, 18, 188);
+}
+
+.contato-email::before {
+  content: 'E-mail:';
+  font-size: 20px;
+  color: #160321;
+  font-weight: 500;
+  position: absolute;
+  top: -24px;
+}
+
+.contato-tel::before {
+  content: 'Celular:';
+  font-size: 20px;
+  color: #160321;
+  font-weight: 500;
+  position: absolute;
+  top: -24px;
+}
