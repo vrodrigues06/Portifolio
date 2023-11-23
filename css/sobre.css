@@ -1,3 +1,7 @@
+.sobre {
+  gap: 40px;
+}
+
 .roxo {
   color: #160321;
   letter-spacing: 0;
@@ -14,14 +18,18 @@ p strong {
 .sobre-info .texto {
   color: #372840;
   margin-bottom: 40px;
+  max-width: 50ch;
+  line-height: 1.75;
+  font-size: 20px;
 }
 
 
 h4 {
-  font-size: 26px;
+  font-size: 20px;
   color: #160321;
   font-weight: 500;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .contato {
@@ -48,7 +56,7 @@ h4 {
 
 .contato-email::before {
   content: 'E-mail:';
-  font-size: 20px;
+  font-size: inherit;
   color: #160321;
   font-weight: 500;
   position: absolute;
@@ -57,9 +65,105 @@ h4 {
 
 .contato-tel::before {
   content: 'Celular:';
-  font-size: 20px;
+  font-size: inherit;
   color: #160321;
   font-weight: 500;
   position: absolute;
   top: -24px;
+}
+
+/* Responsivo */
+
+@media(max-width: 900px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .sobre::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/dec-left.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    left: 20px;
+    opacity: .3;
+  }
+
+  .sobre::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/dec-right.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 180px;
+    right: 80px;
+    opacity: .3;
+  }
+
+  h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/dec-left.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 180px;
+    left: 60px;
+    opacity: .3;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .roxo {
+    display: block;
+    text-align: start;
+  }
+
+  .roxo::before {
+    width: 40px;
+  }
+
+  .sobre::before {
+    right: 20px;
+    top: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-info .texto {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .contato li {
+    font-size: 16px;
+  }
+
+  h4::after {
+    top: 170px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .contato-email {
+    margin-bottom: 20px;
+
+  }
+
+  .contato-tel {
+    margin-right: 120px;
+  }
+
+  h4::after {
+    top: 240px;
+  }
 }
