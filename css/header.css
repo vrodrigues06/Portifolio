@@ -80,37 +80,6 @@
   padding: 10px;
 }
 
-/* Menu-Mobile */
-
-#btn-mobile {
-  display: none;
-  background-color: #350F4D;
-  padding: 10px 16px;
-  border-radius: 4px;
-  color: #FAF1DE;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  gap: 8px;
-}
-
-#hamburguer {
-  border-top: 2px solid;
-  width: 20px;
-  display: block;
-  border-radius: 1px 1px 0 0;
-}
-
-#hamburguer::after, #hamburguer::before {
-  content: "";
-  width: 20px;
-  height: 2px;
-  display: block;
-  background-color: #FAF1DE;
-  margin-top: 5px;
-  border-radius: 4px;
-}
-
 /* Responsivo */
 
 @media(max-width: 800px) {
@@ -131,27 +100,8 @@
 
 }
 
-@media(max-width: 600px) {
-  .header-menu {
-    display: none;
-  }
-
-  #btn-mobile {
-    display: flex;
-    align-items: center;
-  }
-
-
-
-
-}
-
 @media (max-width: 400px) {
   .logo {
     max-width: 160px;
-  }
-
-  #btn-mobile {
-    font-size: 14px;
   }
 }

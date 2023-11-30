@@ -1,0 +1,154 @@
+/* Menu-Mobile */
+
+#btn-mobile {
+  display: none;
+  background-color: #350F4D;
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: #FAF1DE;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px;
+  position: relative;
+  z-index: 300;
+
+}
+
+
+#btn-mobile:hover {
+  background-color: #5F2C7A;
+}
+
+#btn-mobile.ativo #hamburguer {
+  transform: rotate(180deg);
+  transition: transform .4s;
+}
+
+#btn-mobile.ativo #hamburguer::before {
+  display: none;
+  transition: transition .4s;
+}
+
+#btn-mobile.ativo #hamburguer::after {
+  display: none;
+}
+
+#hamburguer {
+  transition: transform .4s;
+  border-top: 2px solid;
+  width: 20px;
+  display: block;
+  border-radius: 1px 1px 0 0;
+}
+
+#hamburguer::after, #hamburguer::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #FAF1DE;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 700px) {
+  .header-menu {
+    display: none;
+    position: absolute;
+    background-color: #350F4D;
+    border-radius: 4px;
+    padding: 60px 0 10px 0;
+    top: 0px;
+    z-index: 200;
+    width: 160px;
+    right: 0;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+  }
+
+
+
+
+  .header-menu.ativo {
+    display: block;
+    animation: showdown .3s forwards;
+  }
+
+  @keyframes showdown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -40px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+
+  #btn-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-menu li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header-menu li::after {
+    content: "";
+    display: block;
+    background-color: rgb(76, 23, 109);
+    width: 100px;
+    height: 1px;
+
+  }
+
+  .header-menu a {
+    font-size: 18px;
+  }
+
+  .header-menu li:last-child a {
+    border: none;
+    padding: 16px 0;
+    border-radius: 0;
+    color: #FAF1DE;
+  }
+
+
+  .header-menu li:last-child::after {
+    display: none;
+  }
+
+  .header-menu li:last-child a:hover {
+    background-color: #350F4D;
+    color: #d2d520;
+
+  }
+
+  .header-menu a:hover::before {
+    width: 0;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #btn-mobile {
+    font-size: 14px;
+  }
+
+  .header-menu a {
+    font-size: 16px;
+  }
+}
