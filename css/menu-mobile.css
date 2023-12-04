@@ -75,12 +75,17 @@
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
   }
 
-
+  .header-menu.closing {
+    display: block;
+    animation: showup .5s forwards;
+    pointer-events: none;
+  }
 
 
   .header-menu.ativo {
     display: block;
-    animation: showdown .3s forwards;
+    animation: showdown .5s forwards;
+
   }
 
   @keyframes showdown {
@@ -92,6 +97,18 @@
     to {
       opacity: 1;
       transform: translate3d(0, 0px, 0);
+    }
+  }
+
+  @keyframes showup {
+    from {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+
+    to {
+      opacity: 0;
+      transform: translate3d(0, -40px, 0);
     }
   }
 
