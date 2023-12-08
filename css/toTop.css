@@ -1,0 +1,23 @@
+.top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  position: fixed;
+  border: none;
+  background-color: #e0e0e0;
+  opacity: .3;
+}
+
+.top div {
+  width: 20px;
+  height: 24px;
+  background: url(../img/triangulo.svg) no-repeat center;
+  margin: 0 auto;
+}
+
+.top:hover {
+  opacity: 1;
+}
