@@ -10,6 +10,10 @@
   transform: translate3d(20px, 0, 0);
 }
 
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+
 .anime {
   opacity: 1;
   transform: none;
