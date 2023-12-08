@@ -6,7 +6,6 @@ const modalContainer = document.querySelector(".modal-container");
 const openButtons = document.querySelectorAll('[data-modal="open"]');
 const closeButton = document.querySelector('[data-modal="fechar"]');
 const modal = document.querySelector(".modal");
-const events = ["click", "touchstart"];
 
 function openModal(event) {
   event.preventDefault();
@@ -38,8 +37,6 @@ modalContainer.addEventListener("click", clickOutModal);
 
 closeButton.addEventListener("click", closeModal);
 
-events.forEach((userEvent) => {
-  openButtons.forEach((button) => {
-    button.addEventListener(userEvent, openModal);
-  });
+openButtons.forEach((button) => {
+  button.addEventListener("click", openModal);
 });
