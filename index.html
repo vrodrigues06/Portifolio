@@ -29,7 +29,7 @@
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contatos">Contatos</a></li>
-          <li><a href="">Envie um E-mail</a></li>
+          <li><a data-modal="open" href="">Envie um E-mail</a></li>
         </ul>
       </nav>
   </header>
@@ -41,7 +41,7 @@
         <p class="texto">Olá! Sou <strong>Vitor</strong>, Desenvolvedor apaixonado pela construção de interfaces Web funcionais. Navegue pelo meu portfólio e explore minha capacidade de criar sites <strong> responsivos </strong> e atraentes, não deixando de lado a <strong> acessibilidade </strong> e <strong> SEO</strong>. </p>
         <div class="info-button">
           <a class="curriculo button" href="Curriculo.pdf" download>Baixar CV</a>
-          <a class="contate" href="">Contate-me</a>
+          <a data-modal="open" class="contate" href="">Contate-me</a>
         </div>
       </div>
       <div class="introducao-img">
@@ -182,11 +182,43 @@
       <nav class="footer-nav">
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="">Envie um E-mail</a></li>
+        <li><a data-modal="open" href="">Envie um E-mail</a></li>
       </nav>
       <p>Made by @Vitor, alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <div class="contato-info">
+        <h1>Ideias em Ação, Entre em Contato<span>.</span></h1>
+        <p class="texto">Quer discutir um projeto, me contratar ou simplesmente dizer olá? Estou aqui para ouvir! Deixe sua mensagem e entrarei em contato o mais rápido possível!</p>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank">
+            <img src="./img/redes/footer-linkedin.svg" alt="Linkedin">
+          </a>
+          <a href="https://www.instagram.com/vitorodrigues06/" target="_blank">
+            <img src="./img/redes/footer-instagram 1.svg" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100004184227106" target="_blank">
+            <img src="./img/redes/footer-facebook 1.svg" alt="Facebook">
+          </a>
+        </div>
+        <a href="https://wa.me/5511951219641" target="_blank">Clique aqui se quiser bater um papo diretamente pelo whatsapp</a>
+
+      </div>
+      <form class="contato-form" action="">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" autocomplete="name" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="contato@email.com" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea>
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+      <button data-modal="fechar" class="fechar">✖</button>
+    </div>
+  </section>
 
   <script src="./js/script.js" type="module"></script>
 </body>
