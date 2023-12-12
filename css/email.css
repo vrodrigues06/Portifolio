@@ -1,0 +1,38 @@
+.sucesso {
+  color: #13c613;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.erro {
+  color: #FF0000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+.dot {
+  animation: blink 1.66s infinite;
+  opacity: 0;
+}
+
+#dot2 {
+  animation-delay: 2s;
+}
+
+#dot3 {
+  animation-delay: 2.33s;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

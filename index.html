@@ -18,14 +18,14 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img class="logo fadeInUp" data-anime="100" src="./img/logo.svg" alt="Vitor-Rodrigues">
+        <img class="logo fadeInUp" data-anime="200" src="./img/logo.svg" alt="Vitor-Rodrigues">
       </a>
 
       <nav aria-label="primaria">
         <button id="btn-mobile" aria-expanded="false" aria-controls="menu">Menu
           <span id="hamburguer"></span>
         </button>
-        <ul class="header-menu fadeInUp" data-anime="200" id="menu">
+        <ul class="header-menu fadeInUp" data-anime="400" id="menu">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contatos">Contatos</a></li>
@@ -37,18 +37,18 @@
   <section class="introducao-bg" aria-label="Introdução">
     <div class="introducao container">
       <div class="introducao-info">
-        <h1 class="titulo fadeInDown" data-anime="400">Desenvolvedor Front-End</h1>
-        <p class="texto fadeInDown" data-anime="600">Olá! Sou <strong>Vitor</strong>, Desenvolvedor apaixonado pela construção de interfaces Web funcionais. Navegue pelo meu portfólio e explore minha capacidade de criar sites <strong> responsivos </strong> e atraentes, não deixando de lado a <strong> acessibilidade </strong> e <strong> SEO</strong>. </p>
-        <div class="info-button fadeInDown" data-anime="800">
+        <h1 class="titulo fadeInDown" data-anime="600">Desenvolvedor Front-End</h1>
+        <p class="texto fadeInDown" data-anime="1000">Olá! Sou <strong>Vitor</strong>, Desenvolvedor apaixonado pela construção de interfaces Web funcionais. Navegue pelo meu portfólio e explore minha capacidade de criar sites <strong> responsivos </strong> e atraentes, não deixando de lado a <strong> acessibilidade </strong> e <strong> SEO</strong>. </p>
+        <div class="info-button fadeInDown" data-anime="1200">
           <a class="curriculo button" href="Curriculo.pdf" download>Baixar CV</a>
           <a data-modal="open" class="contate" href="">Contate-me</a>
         </div>
       </div>
       <div class="introducao-img">
-        <div class="perfil fadeInLeft" data-anime="1000">
+        <div class="perfil fadeInLeft" data-anime="1600">
           <img class="perfil" id="imagem-perfil" alt="Foto de Perfil">
         </div>
-        <div class="introducao-redes fadeInLeft" data-anime="1200">
+        <div class="introducao-redes fadeInLeft" data-anime="1800">
           <a class="rede-icon" href="https://github.com/vrodrigues06" target="_blank"><img src="./img/redes/intro-git.svg" alt="GIT"></a>
           <a class="rede-icon" href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank"><img src="./img/redes/intro-linkedin.svg" alt="Linkedin"></a>
         </div>
@@ -207,14 +207,14 @@
         <a href="https://wa.me/5511951219641" target="_blank">Clique aqui se quiser bater um papo diretamente pelo whatsapp</a>
 
       </div>
-      <form class="contato-form" action="">
+      <form class="contato-form" action="https://formsubmit.co/ajax/6442e3651ae9dae0c90b3acc487b959c" method="post" data-form>
         <label for="name">Nome:</label>
         <input type="text" name="name" id="name" autocomplete="name" required>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" autocomplete="email" placeholder="contato@email.com" required>
         <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea>
-        <button type="submit" id="submit">Enviar</button>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="8" required></textarea>
+        <button type="submit" id="submit" data-submit>Enviar</button>
       </form>
       <button data-modal="fechar" class="fechar">✖</button>
     </div>
