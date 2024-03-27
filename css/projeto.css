@@ -11,7 +11,7 @@
 }
 
 .projeto-info h2 {
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: "Anonymous Pro", sans-serif;
   font-size: 32px;
   color: #160321;
   font-weight: bold;
@@ -20,7 +20,7 @@
 }
 
 .projeto-info p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #5b5061;
   line-height: 1.6;
@@ -45,7 +45,7 @@
 .projeto-button {
   font-size: 16px;
   color: #faf6f0;
-  background: linear-gradient(#A575BD, #3D1357);
+  background: linear-gradient(#a575bd, #3d1357);
   padding: 16px 20px;
   font-weight: 500;
   line-height: 1.5;
@@ -64,22 +64,20 @@
 }
 
 .projeto-button:hover::after {
-  animation: moveright .5s forwards;
+  animation: moveright 0.5s forwards;
 }
 
 .projeto-git:hover {
   transform: scale(1.1);
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
-
 
 .bg {
   grid-template-columns: 1fr 1.2fr;
   padding: 40px 0;
-  background: linear-gradient(to right, #EBD7BE 80%, #faf6f0 20%);
-  box-shadow: -180px 0 0 0 #EBD7BE;
+  background: linear-gradient(to right, #ebd7be 80%, #faf6f0 20%);
+  box-shadow: -180px 0 0 0 #ebd7be;
 }
-
 
 .bg .projeto-info {
   text-align: end;
@@ -99,10 +97,14 @@
   }
 
   50% {
-    left: 8px
+    left: 8px;
   }
 
   100% {
     left: 0px;
   }
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
