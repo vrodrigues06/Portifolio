@@ -15,7 +15,7 @@
 
 .header-menu {
   display: flex;
-  color: #FAF1DE;
+  color: #faf1de;
   flex-wrap: wrap;
   gap: 36px;
   font-size: 18px;
@@ -38,7 +38,7 @@
   background-color: #d2d520;
   height: 1.5px;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: absolute;
 }
 
@@ -46,35 +46,9 @@
   width: 24px;
 }
 
-
 .header-menu a:hover {
   color: #d2d520;
 }
-
-.header-menu li:last-child a:hover::before {
-  width: 0;
-}
-
-.header-menu li:last-child a:hover {
-  color: #D6BA96;
-}
-
-
-.header-menu li:last-child a {
-  padding: 12px 16px;
-  background-color: #350F4D;
-  border-radius: 30px;
-  color: #D6BA96;
-  border: 2px solid #D6BA96;
-}
-
-.header-menu li:last-child a:hover {
-  background-color: #441362;
-  color: #EBD7BE;
-  border-color: #EBD7BE;
-  transition: background .3s ease-in-out;
-}
-
 
 .logo {
   padding: 10px;
@@ -82,7 +56,7 @@
 
 /* Responsivo */
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .logo {
     max-width: 200px;
   }
@@ -94,10 +68,9 @@
   .header-menu a {
     padding: 12px 16px;
     border-radius: 4px;
-    background-color: #350F4D;
+    background-color: #350f4d;
     font-size: 16px;
   }
-
 }
 
 @media (max-width: 400px) {

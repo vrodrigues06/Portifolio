@@ -1,5 +1,5 @@
 .introducao-bg {
-  background: url(../img/BG.svg)no-repeat bottom;
+  background: url(../img/BG.svg) no-repeat bottom;
   background-size: cover;
   height: 770px;
 }
@@ -8,7 +8,6 @@
   max-width: 400px;
   margin-bottom: 20px;
 }
-
 
 .introducao-redes {
   display: flex;
@@ -23,7 +22,7 @@
 }
 
 .rede-icon {
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   max-width: 60px;
 }
 
@@ -33,10 +32,10 @@
 
 .titulo {
   font-size: 48px;
-  color: #FAF1DE;
+  color: #faf1de;
   max-width: 400px;
   line-height: 1;
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: "Anonymous Pro", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.76px;
   margin-bottom: 60px;
@@ -77,7 +76,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   letter-spacing: 0.6px;
   position: relative;
   padding: 18px 30px;
@@ -104,7 +103,7 @@
 
 .contate {
   color: #e3ccae;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -113,11 +112,11 @@
   border-radius: 5px;
   max-width: 200px;
   border: 1px solid #bf874b;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contate:hover {
   border-color: #e3ccae;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   transform: scale(0.99);
 }
