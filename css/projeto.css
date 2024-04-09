@@ -73,7 +73,7 @@
 }
 
 .projeto-box.right {
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   padding: 40px 0;
   background: linear-gradient(to right, #ebd7be 80%, #faf6f0 20%);
   box-shadow: -180px 0 0 0 #ebd7be;
@@ -84,7 +84,7 @@
 }
 
 .right .projeto-info p {
-  max-width: 60ch;
+  max-width: 62ch;
 }
 
 .right .projeto-buttons {
