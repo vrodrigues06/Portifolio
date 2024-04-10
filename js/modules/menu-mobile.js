@@ -7,8 +7,7 @@ export default function initMenuMobile() {
 
   const events = ["click", "touchstart"];
 
-  function openMenu(event) {
-    event.preventDefault();
+  function openMenu() {
     menuList.classList.add("ativo");
     menuButton.classList.add("ativo");
     outsideEvent(menuList, events, () => {
@@ -28,6 +27,6 @@ export default function initMenuMobile() {
   }
 
   events.forEach((userEvent) => {
-    menuButton.addEventListener(userEvent, openMenu);
+    menuButton.addEventListener(userEvent, openMenu, { passive: true });
   });
 }

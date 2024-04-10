@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Preload css to solve some performance problem -->
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <title>V.Rodrigues - Desenvolvedor Front-End</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -18,7 +20,7 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img class="logo fadeInUp" data-anime="200" src="./img/logo.svg" alt="Vitor-Rodrigues">
+        <img class="logo fadeInUp" data-anime="200" src="./img/logo.svg" alt="Vitor-Rodrigues" width="248" height="31">
       </a>
 
       <nav aria-label="primaria">
@@ -44,12 +46,13 @@
         </div>
       </div>
       <div class="introducao-img">
-        <div class="perfil fadeInLeft" data-anime="1600">
-          <img class="perfil" id="imagem-perfil" alt="Foto de Perfil">
-        </div>
+        <picture class="perfil fadeInLeft" data-anime="1600">
+          <source media="(max-width: 750px)" srcset="./img/fotos/perfil-pequena.webp">
+          <img class="perfil" src="./img/fotos/perfil.webp" width="800" height="381" id="imagem-perfil" alt="Foto de Perfil">
+        </picture>
         <div class="introducao-redes fadeInLeft" data-anime="1800">
-          <a class="rede-icon" href="https://github.com/vrodrigues06" target="_blank"><img src="./img/redes/intro-git.svg" alt="GIT"></a>
-          <a class="rede-icon" href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank"><img src="./img/redes/intro-linkedin.svg" alt="Linkedin"></a>
+          <a class="rede-icon" href="https://github.com/vrodrigues06" target="_blank"><img src="./img/redes/intro-git.svg" alt="GIT" width="60" height="69"></a>
+          <a class="rede-icon" href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank"><img src="./img/redes/intro-linkedin.svg" alt="Linkedin" width="60" height="69"></a>
         </div>
       </div>
     </div>
@@ -59,13 +62,13 @@
     <div class="sobre container">
 
       <div class="sobre-img">
-        <img src="./img/fotos/teste.webp" alt="">
+        <img src="./img/fotos/teste.webp" width="575" height="600" alt="">
       </div>
 
       <div class="sobre-info">
         <h1 class="titulo roxo">Sobre Mim</h1>
         <p class="texto">Olá! Meu nome é <strong> Vitor </strong>, tenho 26 anos e estou atualmente cursando <strong> Análise e Desenvolvimento de Sistemas (ADS) </strong>, alimentando minha paixão por tecnologia e programação. Meu objetivo é evoluir na carreira de desenvolvimento, vislumbrando tornar-me um especialista Full Stack.<strong> Atualmente, meu foco está no desenvolvimento Front-end </strong>, onde busco aprimorar minhas habilidades e explorar novas possibilidades criativas. Ansioso para podermos construir algo incrível juntos!</p>
-        <h4>aberto para oportunidades.</h4>
+        <h2>aberto para oportunidades.</h2>
         <ul class="contato">
           <li class="contato-email"><a href="mailto:devpro@vrodrigues06.com">devpro@vrodrigues06.com</a></li>
           <li class="contato-tel"><a href="tel:+5511951219641">(11) 95121-9641</a></li>
@@ -80,35 +83,35 @@
     <h2>Tecnologias</h2>
     <ul>
       <li>
-        <img src="./img/techs/html5.svg" alt="HTML">
+        <img src="./img/techs/html5.svg" alt="Tecnology-Icon" width="51" height="67">
         <span>HTML</span>
       </li>
       <li>
-        <img src="./img/techs/css3.svg" alt="CSS">
+        <img src="./img/techs/css3.svg" alt="Tecnology-Icon" width="51" height="67">
         <span>CSS</span>
       </li>
       <li>
-        <img src="./img/techs/js.svg" alt="JavaScript">
+        <img src="./img/techs/js.svg" alt="Tecnology-Icon" width="58" height="67">
         <span>JAVASCRIPT</span>
       </li>
       <li>
-        <img src="./img/techs/git.svg" alt="GIT">
+        <img src="./img/techs/git.svg" alt="Tecnology-Icon" width="58" height="67">
         <span>GIT</span>
       </li>
       <li>
-        <img src="./img/techs/figma.svg" alt="Desgin">
+        <img src="./img/techs/figma.svg" alt="Tecnology-Icon" width="51" height="67">
         <span>UI DESIGN</span>
       </li>
       <li>
-        <img src="./img/techs/sass.svg" alt="Sass">
+        <img src="./img/techs/sass.svg" alt="Tecnology-Icon" width="83" height="67">
         <span>SASS</span>
       </li>
       <li>
-        <img src="./img/techs/bootstrap.svg" alt="bootstrap">
+        <img src="./img/techs/bootstrap.svg" alt="Tecnology-Icon" width="76" height="67">
         <span>BOOTSTRAP</span>
       </li>
       <li>
-        <img src="./img/techs/npm.svg" alt="NPM">
+        <img src="./img/techs/npm.svg" alt="Tecnology-Icon" width="75" height="67">
         <span>NPM</span>
       </li>
       <!-- <li>
@@ -129,17 +132,17 @@
           <div class="projeto-buttons">
             <a class="projeto-button button" href="https://vrodrigues06.github.io/Bankist/" target="_blank">Explore Mais</a>
             <a class="projeto-git" href="https://github.com/vrodrigues06/Bankist" target="_blank">
-              <img src="./img/redes/project-git.svg" alt="">
+              <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
             </a>
           </div>
         </div>
         <div class="projeto-img">
-          <img src="./img/fotos/bankist.webp" alt="Bikcraft Projeto">
+          <img src="./img/fotos/bankist.webp" alt="Bikcraft Projeto" width="580" height="470">
         </div>
       </div>
       <div class="projeto-box left">
         <div class="projeto-img">
-          <img src="./img/fotos/mapty.webp" alt="Bikcraft Projeto">
+          <img src="./img/fotos/mapty.webp" alt="Bikcraft Projeto" width="580" height="470">
         </div>
         <div class="projeto-info">
           <h2>Mapty</h2>
@@ -148,7 +151,7 @@
           <div class="projeto-buttons">
             <a class="projeto-button button" href="https://vrodrigues06.github.io/Mapty/" target="_blank">Explore Mais</a>
             <a class="projeto-git" href="https://github.com/vrodrigues06/mapty" target="_blank">
-              <img src="./img/redes/project-git.svg" alt="">
+              <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
             </a>
           </div>
         </div>
@@ -161,12 +164,12 @@
           <div class="projeto-buttons">
             <a class="projeto-button button" href="https://vrodrigues06.github.io/bikecraft/" target="_blank">Explore Mais</a>
             <a class="projeto-git" href="https://github.com/vrodrigues06/bikecraft" target="_blank">
-              <img src="./img/redes/project-git.svg" alt="">
+              <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
             </a>
           </div>
         </div>
         <div class="projeto-img">
-          <img src="./img/fotos/Bikcraft.webp" alt="Bikcraft Projeto">
+          <img src="./img/fotos/Bikcraft.webp" alt="Bikcraft Projeto" width="580" height="470">
         </div>
       </div>
     </div>
@@ -183,23 +186,23 @@
         <h2>Redes Sociais</h2>
         <div class="footer-icons">
           <a href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank">
-            <img src="./img/redes/footer-linkedin.svg" alt="Linkedin">
+            <img src="./img/redes/footer-linkedin.svg" alt="Linkedin Link" width="28" height="32">
           </a>
           <a href="https://www.instagram.com/vitorodrigues06/" target="_blank">
-            <img src="./img/redes/footer-instagram 1.svg" alt="Instagram">
+            <img src="./img/redes/footer-instagram 1.svg" alt="Instagram Link" width="28" height="32">
           </a>
           <a href="https://www.facebook.com/profile.php?id=100004184227106" target="_blank">
-            <img src="./img/redes/footer-facebook 1.svg" alt="Facebook">
+            <img src="./img/redes/footer-facebook 1.svg" alt="Facebook Link" width="28" height="32">
           </a>
         </div>
         <a href="https://wa.me/5511951219641" target="_blank">Clique aqui se quiser bater um papo ou marcar um café</a>
 
       </div>
-      <nav class="footer-nav">
+      <ul class="footer-nav">
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a data-modal="open" href="">Envie um E-mail</a></li>
-      </nav>
+      </ul>
       <p>Made by @Vitor, alguns direitos reservados.</p>
     </div>
   </footer>
@@ -211,13 +214,13 @@
         <p class="texto">Quer discutir um projeto, me contratar ou simplesmente dizer olá? Estou aqui para ouvir! Deixe sua mensagem e entrarei em contato o mais rápido possível!</p>
         <div class="footer-icons">
           <a href="https://www.linkedin.com/in/vitor-rodrigues06/" target="_blank">
-            <img src="./img/redes/footer-linkedin.svg" alt="Linkedin">
+            <img src="./img/redes/footer-linkedin.svg" alt="Linkedin Link" width="28" height="32">
           </a>
           <a href="https://www.instagram.com/vitorodrigues06/" target="_blank">
-            <img src="./img/redes/footer-instagram 1.svg" alt="Instagram">
+            <img src="./img/redes/footer-instagram 1.svg" alt="Instagram Link" width="28" height="32">
           </a>
           <a href="https://www.facebook.com/profile.php?id=100004184227106" target="_blank">
-            <img src="./img/redes/footer-facebook 1.svg" alt="Facebook">
+            <img src="./img/redes/footer-facebook 1.svg" alt="Facebook Link" width="28" height="32">
           </a>
         </div>
         <a href="https://wa.me/5511951219641" target="_blank">Clique aqui se quiser bater um papo diretamente pelo whatsapp</a>
@@ -237,7 +240,9 @@
   </section>
 
   <button class="top">
-    <div></div>
+    <div>
+      <img src="./img/triangulo.svg" alt="Button Go to Top" width="20" height="24">
+    </div>
   </button>
 
   <script src="./js/script.js" type="module"></script>

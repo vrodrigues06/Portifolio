@@ -9,12 +9,13 @@
   border: none;
   background-color: #350f4d;
   opacity: 0.3;
+  display: flex;
+  align-items: center;
 }
 
 .top div {
   width: 20px;
-  height: 24px;
-  background: url(../img/triangulo.svg) no-repeat center;
+  height: 14px;
   margin: 0 auto;
 }
 
