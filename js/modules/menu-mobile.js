@@ -7,7 +7,8 @@ export default function initMenuMobile() {
 
   const events = ["click", "touchstart"];
 
-  function openMenu() {
+  function openMenu(e) {
+    e.preventDefault();
     menuList.classList.add("ativo");
     menuButton.classList.add("ativo");
     outsideEvent(menuList, events, () => {
@@ -21,12 +22,12 @@ export default function initMenuMobile() {
           menuList.classList.remove("closing");
           menuButton.classList.remove("closing");
         },
-        { onde: true }
+        { once: true }
       );
     });
   }
 
   events.forEach((userEvent) => {
-    menuButton.addEventListener(userEvent, openMenu, { passive: true });
+    menuButton.addEventListener(userEvent, openMenu);
   });
 }

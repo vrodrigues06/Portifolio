@@ -34,7 +34,7 @@ p strong {
   font-size: 20px;
 }
 
-h2 {
+.sobre-info h2 {
   font-size: 20px;
   color: #160321;
   font-weight: 500;
@@ -128,7 +128,7 @@ h2 {
     opacity: 0.3;
   }
 
-  h2::after {
+  .sobre-info h2::after {
     content: "";
     display: block;
     position: absolute;
@@ -162,7 +162,7 @@ h2 {
     font-size: 16px;
   }
 
-  h4 {
+  .sobre-info h2 {
     font-size: 16px;
   }
 
@@ -170,7 +170,7 @@ h2 {
     font-size: 16px;
   }
 
-  h2::after {
+  .sobre-info h2::after {
     top: 300px;
   }
 }
