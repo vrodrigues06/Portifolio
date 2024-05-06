@@ -8,9 +8,10 @@
   position: fixed;
   border: none;
   background-color: #350f4d;
-  opacity: 0.3;
-  display: flex;
+  opacity: 1;
+  display: none;
   align-items: center;
+  animation: slideUp 0.4s forwards;
 }
 
 .top div {
@@ -19,6 +20,50 @@
   margin: 0 auto;
 }
 
+.hideBtn {
+  animation: slideDown 0.4s forwards;
+}
+
 .top:hover {
-  opacity: 1;
+  & img {
+    animation: animeUp forwards 0.5s;
+  }
+}
+
+@keyframes animeUp {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
