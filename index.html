@@ -39,7 +39,7 @@
     <div class="introducao container">
       <div class="introducao-info">
         <h1 class="titulo fadeInDown" data-anime="600">Desenvolvedor Front-End</h1>
-        <p class="texto fadeInDown" data-anime="1000">Olá! Sou <strong>Vitor</strong>, Desenvolvedor apaixonado pela construção de interfaces Web funcionais. Navegue pelo meu portfólio e explore minha capacidade de criar sites <strong> responsivos </strong> e atraentes, não deixando de lado a <strong> acessibilidade </strong> e <strong> SEO</strong>. </p>
+        <p class="texto fadeInDown" data-anime="1000">Olá! Sou <strong>Vitor</strong>, Sou desenvolvedor front-end, apaixonado por criar interfaces intuitivas e modernas. Especialista em <strong>React</strong> com uma abordagem focada em <strong>desempenho</strong>, <strong>acessibilidade</strong> e <strong>design responsivo</strong>, posso te ajudar a se destacar no mundo digital. </p>
         <div class="info-button fadeInDown" data-anime="1200">
           <a class="curriculo button" href="Curriculo.pdf" download>Baixar CV</a>
           <a data-modal="open" class="contate" href="">Contate-me</a>
@@ -68,7 +68,6 @@
       <div class="sobre-info">
         <h1 class="titulo roxo">Sobre Mim</h1>
         <p class="texto">Olá! Meu nome é <strong> Vitor </strong>, tenho 26 anos e estou atualmente cursando <strong> Análise e Desenvolvimento de Sistemas (ADS) </strong>, alimentando minha paixão por tecnologia e programação. Meu objetivo é evoluir na carreira de desenvolvimento, vislumbrando tornar-me um especialista Full Stack.<strong> Atualmente, meu foco está no desenvolvimento Front-end </strong>, onde busco aprimorar minhas habilidades e explorar novas possibilidades criativas. Ansioso para podermos construir algo incrível juntos!</p>
-        <h2>aberto para oportunidades.</h2>
         <ul class="contato">
           <li class="contato-email"><a href="mailto:devpro@vrodrigues06.com">devpro@vrodrigues06.com</a></li>
           <li class="contato-tel"><a href="tel:+5511951219641">(11) 95121-9641</a></li>
@@ -82,36 +81,45 @@
   <article class="tech">
     <h2>Tecnologias</h2>
     <ul>
-      <li>
-        <img src="./img/techs/html5.svg" alt="Tecnology-Icon" width="51" height="67">
-        <span>HTML</span>
+      <li class="react-icon">
+        <img src="./img/techs/React.svg" alt="REACT-Icon" width="58" height="67">
+        <span>REACT</span>
       </li>
-      <li>
-        <img src="./img/techs/css3.svg" alt="Tecnology-Icon" width="51" height="67">
-        <span>CSS</span>
+      <li class="redux-icon">
+        <img src="./img/techs/redux.svg" alt="REDUX-Icon" width="58" height="67">
+        <span>REDUX</span>
       </li>
-      <li>
-        <img src="./img/techs/js.svg" alt="Tecnology-Icon" width="58" height="67">
+      <li class="js-icon">
+        <img src="./img/techs/js.svg" alt="JAVASCRIPT-icon" width="58" height="67">
         <span>JAVASCRIPT</span>
       </li>
-      <li>
-        <img src="./img/techs/git.svg" alt="Tecnology-Icon" width="58" height="67">
-        <span>GIT</span>
-      </li>
-      <li>
-        <img src="./img/techs/figma.svg" alt="Tecnology-Icon" width="51" height="67">
-        <span>UI DESIGN</span>
-      </li>
-      <li>
-        <img src="./img/techs/sass.svg" alt="Tecnology-Icon" width="83" height="67">
+      <li class="sass-icon">
+        <img src="./img/techs/sass.svg" alt="SASS-Icon" width="83" height="67">
         <span>SASS</span>
       </li>
-      <li>
-        <img src="./img/techs/bootstrap.svg" alt="Tecnology-Icon" width="76" height="67">
+      <li class="git-icon">
+        <img src="./img/techs/git.svg" alt="GIT-Icon" width="58" height="67">
+        <span>GIT</span>
+      </li>
+      <!-- <li>
+        <img src="./img/techs/figma.svg" alt="FIGMA-Icon" width="51" height="67">
+        <span>UI DESIGN</span>
+      </li> -->
+
+      <li class="html-icon">
+        <img src="./img/techs/html5.svg" alt="HTML-Icon" width="51" height="67">
+        <span>HTML</span>
+      </li>
+      <li class="css-icon">
+        <img src="./img/techs/css3.svg" alt="CSS-Icon" width="51" height="67">
+        <span>CSS</span>
+      </li>
+      <li class="bootstrap-icon">
+        <img src="./img/techs/bootstrap.svg" alt="BOOTSTRAP-icon" width="76" height="67">
         <span>BOOTSTRAP</span>
       </li>
-      <li>
-        <img src="./img/techs/npm.svg" alt="Tecnology-Icon" width="75" height="67">
+      <li class="npm-icon">
+        <img src="./img/techs/npm.svg" alt="NPM-Icon" width="75" height="67">
         <span>NPM</span>
       </li>
       <!-- <li>
@@ -126,8 +134,21 @@
       <h1 class="titulo roxo">Projetos</h1>
       <div class="projeto-box left">
         <div class="projeto-img">
-          <img src="./img/fotos/Receitando.webp" alt="Receitando Projeto" width="580" height="470">
+          <img src="./img/fotos/Explora-Mundo.webp" alt="Bikcraft Projeto" width="580" height="470">
         </div>
+        <div class="projeto-info">
+          <h2>Explora Mundo</h2>
+          <p>Desenvolvi um aplicativo de registro de viagens em React, integrando mapas interativos com a API do Leaflet. Utilizei Context API e Hooks, inclusive custom hooks, para gerenciamento de estado avançado. Implementei navegação otimizada com React-Router e criei uma API backend personalizada para armazenamento seguro das cidades visitadas, </p>
+          <h3>React, Leaflet-React lib, Context API, React-Router</h3>
+          <div class="projeto-buttons">
+            <a class="projeto-button button" href="https://explora-mundo.netlify.app" target="_blank">Explore Mais</a>
+            <a class="projeto-git" href="https://github.com/vrodrigues06/Explora-Mundo" target="_blank">
+              <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projeto-box right">
         <div class="projeto-info">
           <h2>Receitando</h2>
           <p>Apresentamos um projeto especial, meticulosamente elaborado para abordar o consumo avançado de APIs, com foco particular em receitas culinárias. Este projeto oferece uma variedade de recursos, incluindo a capacidade de pesquisar receitas, manipular ingredientes, criar receitas personalizadas e fazer upload diretamente na API. Além disso, os usuários podem favoritar suas receitas preferidas para acessá-las facilmente a qualquer momento. Tudo isso é apresentado em um template elegante e responsivo, garantindo uma experiência de usuário imersiva e agradável.
@@ -139,8 +160,14 @@
             </a>
           </div>
         </div>
+        <div class="projeto-img">
+          <img src="./img/fotos/Receitando.webp" alt="Receitando Projeto" width="580" height="470">
+        </div>
       </div>
-      <div class="projeto-box right">
+      <div class="projeto-box left">
+        <div class="projeto-img">
+          <img src="./img/fotos/bankist.webp" alt="Bikcraft Projeto" width="580" height="470">
+        </div>
         <div class="projeto-info">
           <h2>Bankist</h2>
           <p> O Bankist é uma plataforma desenvolvida com JavaScript e baseada nos princípios da Programação Orientada a Objetos (OOP). O projeto oferece aos usuários uma experiência simplificada de gerenciamento financeiro, desde a criação da conta até a realização de operações bancárias básicas, como transferências e empréstimos. </p>
@@ -148,25 +175,6 @@
           <div class="projeto-buttons">
             <a class="projeto-button button" href="https://vrodrigues06.github.io/Bankist/" target="_blank">Explore Mais</a>
             <a class="projeto-git" href="https://github.com/vrodrigues06/Bankist" target="_blank">
-              <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
-            </a>
-          </div>
-        </div>
-        <div class="projeto-img">
-          <img src="./img/fotos/bankist.webp" alt="Bikcraft Projeto" width="580" height="470">
-        </div>
-      </div>
-      <div class="projeto-box left">
-        <div class="projeto-img">
-          <img src="./img/fotos/mapty.webp" alt="Bikcraft Projeto" width="580" height="470">
-        </div>
-        <div class="projeto-info">
-          <h2>Mapty</h2>
-          <p>"Mapty" foi desenvolvido em JavaScript avançado com fluxogramas, estruturado usando OOP. Permite rastrear corridas e ciclismo, registrar rotas em mapas, acompanhar a atividade feita Integra API de geolocalização para precisão e usa LocalStorage para persistência. É uma ferramenta eficaz e organizada.
-          <h3>API geolocation, LeafletJs lib, Js</h3>
-          <div class="projeto-buttons">
-            <a class="projeto-button button" href="https://vrodrigues06.github.io/Mapty/" target="_blank">Explore Mais</a>
-            <a class="projeto-git" href="https://github.com/vrodrigues06/mapty" target="_blank">
               <img src="./img/redes/project-git.svg" alt="Github Repository Link" width="105" height="52">
             </a>
           </div>
