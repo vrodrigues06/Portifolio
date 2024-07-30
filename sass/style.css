@@ -629,10 +629,10 @@ p strong {
 }
 .tech {
   background-color: #220534;
-  padding: 50px;
+  padding: 70px 50px 30px;
   display: flex;
   align-items: center;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .tech::-webkit-scrollbar {
@@ -655,7 +655,9 @@ p strong {
   letter-spacing: 0.96px;
   text-transform: uppercase;
   display: flex;
+  align-self: start;
   align-items: center;
+  position: relative;
 }
 
 .tech h2::after {
@@ -669,8 +671,52 @@ p strong {
 }
 
 .tech ul {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr;
+}
+
+.tech .frameworks,
+.tech .styles,
+.tech .outros {
   display: flex;
   gap: 60px;
+  align-items: center;
+  row-gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.frameworks::before,
+.styles::before,
+.outros::before {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.frameworks::before {
+  content: "Linguagens / Libs";
+  background-color: #ea580c;
+  top: -75px;
+}
+
+.styles::before {
+  content: "Estilos";
+  background-color: #0891b2;
+  top: -60px;
+}
+
+.outros::before {
+  content: "Outros";
+  background-color: #6b7280;
+  top: -90px;
+  margin-top: 50px;
 }
 
 .tech li {
@@ -679,6 +725,7 @@ p strong {
   align-items: center;
   gap: 4px;
   transition: transform 0.3s ease-in-out;
+  width: 100px;
 }
 
 .tech li:hover {
@@ -686,108 +733,118 @@ p strong {
 }
 
 .tech li img {
-  min-width: 60px;
-}
-
-.tech li.react-icon img {
-  min-width: 80px;
-  margin-bottom: 6px;
-}
-
-.tech li.redux-icon img {
-  min-width: 70px;
-  margin-bottom: 6px;
-}
-
-.tech li.js-icon img {
-  min-width: 70px;
-}
-
-.tech li.sass-icon img {
-  min-width: 90px;
-}
-
-.tech li.git-icon img {
-  min-width: 70px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
 }
 
 .tech span {
   color: #e3ccae;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-/* Responsivo */
 @media (min-width: 1601px) {
   .tech ul {
     gap: 80px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .tech {
-    padding: 30px;
+    flex-direction: column;
+    padding: 15px;
+    align-items: start;
   }
+  .tech h2::after {
+    transform: rotate(90deg);
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    border-radius: 2px;
+    left: 5px;
+    bottom: -45px;
+  }
+  .tech ul {
+    margin-top: 100px;
+  }
+  .tech li img {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (max-width: 800px) {
   .tech h2 {
     font-size: 24px;
   }
-  .tech li img {
-    min-width: 50px;
+  .tech h2::after {
+    width: 2px;
+    height: 72px;
+    left: 0;
+    bottom: -40px;
   }
-  .tech li.react-icon img {
-    min-width: 68px;
-    margin-bottom: 6px;
+  .tech li {
+    width: 80px;
   }
-  .tech li.redux-icon img {
-    min-width: 60px;
-    margin-bottom: 6px;
-  }
-  .tech li.js-icon img {
-    min-width: 50px;
-  }
-  .tech li.git-icon img {
-    min-width: 60px;
-  }
-  .tech li.npm-icon img {
-    min-width: 74px;
+  .tech li > span {
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
-  .tech {
-    padding: 24px;
+  .tech ul {
+    gap: 50px;
+  }
+  .tech li {
+    width: 70px;
+  }
+  .tech li > span {
+    font-size: 10px;
+  }
+  .tech li img {
+    width: 42px;
+    height: 42px;
+  }
+  .tech .frameworks,
+  .tech .styles,
+  .tech .outros {
+    gap: 30px;
   }
   .tech h2 {
     font-size: 20px;
   }
-  .tech li img {
-    min-width: 45px;
+  .tech h2::after {
+    width: 2px;
+    height: 50px;
+    left: -10px;
+    bottom: -30px;
   }
-  .tech li.react-icon img {
-    min-width: 60px;
-    margin-bottom: 4px;
-  }
-  .tech li.redux-icon img {
-    min-width: 50px;
-    margin-bottom: 6px;
-  }
-  .tech li.git-icon img {
-    min-width: 45px;
-  }
-  .tech li.sass-icon img,
-  .tech li.bootstrap-icon img,
-  .tech li.npm-icon img {
-    min-width: 40px !important;
-    max-width: 60px;
-  }
-  .tech li.js-icon img {
-    max-width: 50px;
+  .tech li.styled-icon {
+    align-items: start;
   }
 }
-@media (max-width: 420px) {
-  .tech {
-    padding: 24px;
-  }
+@media (max-width: 430px) {
   .tech ul {
     gap: 40px;
+  }
+  .tech li {
+    width: 40px;
+  }
+  .tech li > span {
+    font-size: 8px;
+  }
+  .tech li img {
+    width: 36px;
+    height: 36px;
+  }
+  .frameworks::before,
+  .styles::before,
+  .outros::before {
+    font-size: 8px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+  .outros::before {
+    margin-top: 60px;
   }
 }
 .projeto {
@@ -813,18 +870,36 @@ p strong {
 
 .projeto-info p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #5b5061;
   line-height: 1.6;
-  max-width: 50ch;
+  max-width: 60ch;
   margin-bottom: 20px;
 }
 
 .projeto-info h3 {
-  font-weight: 700;
-  color: #220534;
   text-transform: uppercase;
   margin-bottom: 40px;
+  font-weight: 700;
+  color: #220534;
+}
+
+.projeto-tech-lista {
+  margin-bottom: 40px;
+}
+.projeto-tech-lista > li {
+  font-weight: 700;
+  color: #220534;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.projeto-tech-lista > li > span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.right .projeto-tech-lista {
+  text-align: start;
 }
 
 .projeto-buttons {
@@ -876,7 +951,7 @@ p strong {
 }
 
 .right .projeto-info p {
-  max-width: 62ch;
+  max-width: 80ch;
 }
 
 .right .projeto-buttons {
@@ -1081,8 +1156,11 @@ footer h2 {
     padding: 14px 18px;
     line-height: 1.4;
   }
+  .projeto-img {
+    min-width: 400px;
+  }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .projeto-box {
     gap: 20px;
   }
@@ -1108,6 +1186,16 @@ footer h2 {
   .projeto-git {
     width: 80px;
   }
+  .projeto-tech-lista {
+    margin-bottom: 20px;
+  }
+  .projeto-tech-lista > li {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .projeto-tech-lista > li > span {
+    font-size: 12px;
+  }
 }
 @media (max-width: 750px) {
   .projeto .roxo {
@@ -1129,7 +1217,7 @@ footer h2 {
     margin-bottom: 12px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .projeto {
     gap: 60px;
   }
@@ -1174,6 +1262,9 @@ footer h2 {
   }
   .left .projeto-button::after {
     display: inline-block;
+  }
+  .projeto-img {
+    min-width: 0;
   }
 }
 @media (max-width: 500px) {

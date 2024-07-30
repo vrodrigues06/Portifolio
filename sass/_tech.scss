@@ -1,9 +1,9 @@
 .tech {
   background-color: #220534;
-  padding: 50px;
+  padding: 70px 50px 30px;
   display: flex;
   align-items: center;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .tech::-webkit-scrollbar {
@@ -17,7 +17,6 @@
   border-left: 3px solid #372840;
   border-right: 3px solid #372840;
 }
-
 .tech h2 {
   font-size: 32px;
   font-weight: bold;
@@ -26,9 +25,10 @@
   letter-spacing: 0.96px;
   text-transform: uppercase;
   display: flex;
+  align-self: start;
   align-items: center;
+  position: relative;
 }
-
 .tech h2::after {
   content: "";
   width: 1px;
@@ -38,10 +38,53 @@
   margin-left: 36px;
   margin-right: 80px;
 }
-
 .tech ul {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr;
+}
+
+.tech .frameworks,
+.tech .styles,
+.tech .outros {
   display: flex;
   gap: 60px;
+  align-items: center;
+  row-gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.frameworks::before,
+.styles::before,
+.outros::before {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.frameworks::before {
+  content: "Linguagens / Libs";
+  background-color: #ea580c;
+  top: -75px;
+}
+
+.styles::before {
+  content: "Estilos";
+  background-color: #0891b2;
+  top: -60px;
+}
+
+.outros::before {
+  content: "Outros";
+  background-color: #6b7280;
+  top: -90px;
+  margin-top: 50px;
 }
 
 .tech li {
@@ -50,133 +93,177 @@
   align-items: center;
   gap: 4px;
   transition: transform 0.3s ease-in-out;
+  width: 100px;
 }
-
 .tech li:hover {
   transform: scale(1.1);
 }
 
 .tech li img {
-  min-width: 60px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
 }
+// .tech li.react-icon img {
+//   min-width: 60px;
+//   margin-bottom: 6px;
+// }
+// .tech li.redux-icon img {
+//   min-width: 50px;
+//   margin-bottom: 6px;
+// }
+// .tech li.js-icon img {
+//   min-width: 50px;
+// }
+// .tech li.sass-icon img {
+//   min-width: 40px;
+// }
 
-.tech li.react-icon img {
-  min-width: 80px;
-  margin-bottom: 6px;
-}
-
-.tech li.redux-icon img {
-  min-width: 70px;
-  margin-bottom: 6px;
-}
-
-.tech li.js-icon img {
-  min-width: 70px;
-}
-
-.tech li.sass-icon img {
-  min-width: 90px;
-}
-
-.tech li.git-icon img {
-  min-width: 70px;
-}
-
+// .tech li.tailwind-icon img {
+//   min-width: 40px;
+//   margin-bottom: 8px;
+// }
+// .tech li.styled-icon img {
+//   min-width: 80px;
+// }
+// .tech li.git-icon img {
+//   min-width: 50px;
+// }
+// .tech li.supabase-icon img {
+//   min-width: 50px;
+//   margin-bottom: 8px;
+// }
+// .tech li.html-icon img {
+//   min-width: 40px;
+// }
+// .tech li.npm-icon img {
+//   min-width: 40px;
+// }
 .tech span {
   color: #e3ccae;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
-
-/* Responsivo */
-
 @media (min-width: 1601px) {
   .tech ul {
     gap: 80px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .tech {
-    padding: 30px;
+    flex-direction: column;
+    padding: 15px;
+    align-items: start;
+  }
+  .tech h2::after {
+    transform: rotate(90deg);
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    border-radius: 2px;
+    left: 5px;
+    bottom: -45px;
+  }
+  .tech ul {
+    margin-top: 100px;
   }
 
+  .tech li img {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 800px) {
   .tech h2 {
     font-size: 24px;
   }
+  .tech h2::after {
+    width: 2px;
+    height: 72px;
+    left: 0;
+    bottom: -40px;
+  }
+
+  .tech li {
+    width: 80px;
+    & > span {
+      font-size: 12px;
+    }
+  }
+
+  // .tech li img {
+  //   min-width: 50px;
+  // }
+  // .tech li.react-icon img {
+  //   min-width: 60px;
+  //   margin-bottom: 6px;
+  // }
+  // .tech li.js-icon img {
+  //   min-width: 50px;
+  // }
+}
+@media (max-width: 600px) {
+  .tech ul {
+    gap: 50px;
+  }
+
+  .tech li {
+    width: 70px;
+    & > span {
+      font-size: 10px;
+    }
+  }
 
   .tech li img {
-    min-width: 50px;
+    width: 42px;
+    height: 42px;
   }
 
-  .tech li.react-icon img {
-    min-width: 68px;
-    margin-bottom: 6px;
+  .tech .frameworks,
+  .tech .styles,
+  .tech .outros {
+    gap: 30px;
   }
-
-  .tech li.redux-icon img {
-    min-width: 60px;
-    margin-bottom: 6px;
-  }
-
-  .tech li.js-icon img {
-    min-width: 50px;
-  }
-
-  .tech li.git-icon img {
-    min-width: 60px;
-  }
-
-  .tech li.npm-icon img {
-    min-width: 74px;
-  }
-}
-
-@media (max-width: 600px) {
-  .tech {
-    padding: 24px;
-  }
-
   .tech h2 {
     font-size: 20px;
   }
-
-  .tech li img {
-    min-width: 45px;
+  .tech h2::after {
+    width: 2px;
+    height: 50px;
+    left: -10px;
+    bottom: -30px;
   }
-
-  .tech li.react-icon img {
-    min-width: 60px;
-    margin-bottom: 4px;
-  }
-
-  .tech li.redux-icon img {
-    min-width: 50px;
-    margin-bottom: 6px;
-  }
-
-  .tech li.git-icon img {
-    min-width: 45px;
-  }
-
-  .tech li.sass-icon img,
-  .tech li.bootstrap-icon img,
-  .tech li.npm-icon img {
-    min-width: 40px !important;
-    max-width: 60px;
-  }
-
-  .tech li.js-icon img {
-    max-width: 50px;
+  .tech li.styled-icon {
+    align-items: start;
   }
 }
 
-@media (max-width: 420px) {
-  .tech {
-    padding: 24px;
-  }
-
+@media (max-width: 430px) {
   .tech ul {
     gap: 40px;
+  }
+
+  .tech li {
+    width: 40px;
+    & > span {
+      font-size: 8px;
+    }
+  }
+  .tech li img {
+    width: 36px;
+    height: 36px;
+  }
+  .frameworks::before,
+  .styles::before,
+  .outros::before {
+    font-size: 8px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+  .outros::before {
+    margin-top: 60px;
   }
 }

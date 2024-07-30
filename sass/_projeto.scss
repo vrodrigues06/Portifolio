@@ -21,18 +21,38 @@
 
 .projeto-info p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #5b5061;
   line-height: 1.6;
-  max-width: 50ch;
+  max-width: 60ch;
   margin-bottom: 20px;
 }
 
 .projeto-info h3 {
-  font-weight: 700;
-  color: #220534;
   text-transform: uppercase;
   margin-bottom: 40px;
+  font-weight: 700;
+  color: #220534;
+}
+
+.projeto-tech-lista {
+  // list-style: disc;
+  margin-bottom: 40px;
+  & > li {
+    font-weight: 700;
+    color: #220534;
+    margin-bottom: 12px;
+    font-size: 16px;
+    & > span {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+}
+
+.right .projeto-tech-lista {
+  // display: flex;
+  text-align: start;
 }
 
 .projeto-buttons {
@@ -84,7 +104,7 @@
 }
 
 .right .projeto-info p {
-  max-width: 62ch;
+  max-width: 80ch;
 }
 
 .right .projeto-buttons {

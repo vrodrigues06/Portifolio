@@ -55,9 +55,13 @@
     padding: 14px 18px;
     line-height: 1.4;
   }
+
+  .projeto-img {
+    min-width: 400px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .projeto-box {
     gap: 20px;
   }
@@ -89,6 +93,17 @@
   .projeto-git {
     width: 80px;
   }
+
+  .projeto-tech-lista {
+    margin-bottom: 20px;
+    & > li {
+      margin-bottom: 12px;
+      font-size: 14px;
+      & > span {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @media (max-width: 750px) {
@@ -116,7 +131,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .projeto {
     gap: 60px;
   }
@@ -172,6 +187,9 @@
 
   .left .projeto-button::after {
     display: inline-block;
+  }
+  .projeto-img {
+    min-width: 0;
   }
 }
 
