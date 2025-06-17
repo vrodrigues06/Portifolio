@@ -701,19 +701,19 @@ p strong {
 }
 
 .frameworks::before {
-  content: "Linguagens / Libs";
+  content: "LINGUAGENS / LIBS";
   background-color: #ea580c;
   top: -75px;
 }
 
 .styles::before {
-  content: "Estilos";
+  content: "ESTILOS";
   background-color: #0891b2;
   top: -60px;
 }
 
 .outros::before {
-  content: "Outros";
+  content: "OUTROS";
   background-color: #6b7280;
   top: -90px;
   margin-top: 50px;
@@ -725,7 +725,7 @@ p strong {
   align-items: center;
   gap: 4px;
   transition: transform 0.3s ease-in-out;
-  width: 100px;
+  width: 80px;
 }
 
 .tech li:hover {
@@ -733,8 +733,8 @@ p strong {
 }
 
 .tech li img {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   margin-bottom: 8px;
 }
 
@@ -792,6 +792,7 @@ p strong {
 @media (max-width: 600px) {
   .tech ul {
     gap: 50px;
+    margin-top: 65px;
   }
   .tech li {
     width: 70px;
